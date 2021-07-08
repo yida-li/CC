@@ -1,0 +1,4 @@
+# only the executables
+*exe
+# ide
+.vscode
