@@ -10,7 +10,7 @@ int main()
     Adopter adopter2("M1M2MQ43", "Carl Jung", 1711, "kesswil", "2M7M5Y", "thurgau", 4234331253, 2);
     Adopter adopter3("8M2Q1W2E", "sigmund freud", 8888, "novy", "8W2V3R", "Moravian", 6234821723, 41);
     HSO_Location h1(4241, "the begining", 71, "zurich", "M4M4V4", "monster");
-    Admission admission1(19930303, adopter1, animal1, h1);
+    Admission admission1(20210713, adopter1, animal1, h1);
     Adoption adoption1(20210404, adopter2, animal2);
     return 0;
 }
