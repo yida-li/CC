@@ -1,5 +1,5 @@
 # C++
-c++ bootcamp
+everything learned from C++ how to program 9th edition by paul & harvey deitel, and also Ted 
 
 
 # Cuda
