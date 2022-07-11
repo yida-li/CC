@@ -9,3 +9,8 @@ parallel computing platform that increases the computing performance by harnessi
 # [OPENGL](https://github.com/yida-li/OPENGL)
 
 programming interface for rendering 2D and 3D vector graphics
+
+
+# [SuperHypercube-Game](https://github.com/yida-li/SuperHypercube-Game)
+
+3d game design with openGL framework
