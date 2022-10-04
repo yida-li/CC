@@ -7,7 +7,6 @@ void selectionSort(int *param,int y){
 
 int temp=0;
 int low_index;
-int low=0;
 for(int i=0;i<y;i++)
 {
     low_index=i;

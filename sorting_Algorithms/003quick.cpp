@@ -2,15 +2,23 @@
 
 using namespace std;
 
+
+
+/// @brief exchange elements
+/// @param x 
+/// @param y 
+/// @param z 
 void swap(int x[],int y,int z){
     int temp=x[y];
     x[y]=x[z];
     x[z]=temp;
 }
+
+
 int partition(int param[],int x,int y){
     
-    int middle=((x+y)/2);
-    int pivot=param[middle];
+    
+    int pivot=param[(x+(y-x)/2)];
     while(x<y){
     while(param[x]<pivot){
         ++x;
@@ -27,6 +35,8 @@ int partition(int param[],int x,int y){
     return y;
 }
 
+
+
 void quickSort(int param[],int x,int y){
 
 if(x>=y)return;
@@ -40,10 +50,7 @@ int main()
 {
 
     
-int numbers[12]={1,21,21,21,19,18,18,16,17,21,21,1};
-//{12,2,34,4422,5,62,32,541,52,81,222,343};
-//[2]={333,3};
-//[12]={12,2,34,4422,5,62,32,541,52,81,222,343};
+int numbers[12]={122,21,21,21,19,18,1222,16,17,21,21,122};
 
 int sizeForScale=sizeof(numbers)/sizeof(*numbers);
 //quickSort(numbers,0,sizeForScale-1);

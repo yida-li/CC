@@ -19,34 +19,25 @@ int Partition(int numbers[], int i, int k) {
    h = k;
    
    while (!done) {
-      
-      /* Increment l while numbers[l] < pivot */
       while (numbers[l] < pivot) {
          ++l;
       }
       
-      /* Decrement h while pivot < numbers[h] */
       while (pivot < numbers[h]) {
          --h;
       }
-      
-      /* If there are zero or one elements remaining,
-       all numbers are partitioned. Return h */
+
       if (l >= h) {
          done = true;
       }
       else {
-         /* Swap numbers[l] and numbers[h],
-          update l and h */
          temp = numbers[l];
          numbers[l] = numbers[h];
-         numbers[h] = temp;
-         
+         numbers[h] = temp;    
          ++l;
          --h;
       }
    }
-   
    return h;
 }
 
@@ -70,8 +61,8 @@ void Quicksort(int numbers[], int i, int k) {
 }
 
 int main() {
-   int numbers[] = { 10, 2, 78, 4, 45, 32, 7, 11 };
-   const int NUMBERS_SIZE = 8;
+   int numbers[] = {122,21,21,21,19,18,122,16,17,21,21,122};
+   const int NUMBERS_SIZE = 12;
    int i;
    
    cout << "UNSORTED: ";
